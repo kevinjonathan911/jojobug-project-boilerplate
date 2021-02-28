@@ -1,0 +1,25 @@
+/**
+	1. FIXME: webpack doesn't alert calling undefined function
+
+	2. If you are not strong with scss maps, take a look at
+	{ @link https://www.sitepoint.com/extra-map-functions-sass/}
+*/
+
+@function vw($val, $base: 640) {
+  @return $val / $base * 100 + vw;
+}
+@function vh($val, $base: 1080) {
+  @return $val / $base * 100 + vw;
+}
+
+@function vw_d($val) {
+  @return $val / 1920 * 100 + vw;
+}
+
+@function vh_d($val) {
+  @return $val / 1080 * 100 + vh;
+}
+
+@function vw_s($val) {
+  @return $val / 1440 * 100 + vw;
+}
